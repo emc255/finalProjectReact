@@ -1,38 +1,134 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #15202b;
+  color: white;
+  margin: auto;
+}
+
+.fixed-container {
+  height: 10vh;
+  width: 100%;
+}
+
+.outer-header {
+  height: 10vh;
+  width: 100%;
+  border-bottom: 1px solid #1c91d9;
+  position: fixed;
+
+  background: #15202b;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  height: 10vh;
+  align-items: center;
+  margin: auto;
+  max-width: 900px;
+}
+
+.fa-twitter {
+  font-size: 30px;
+  color: #1c91d9;
+  margin: 10px;
+}
+
+form {
+  width: 94%;
+}
+
+.message-input {
+  height: 30px;
+  width: 76%;
+  margin-right: 2%;
+  padding-left: 15px;
+  border: 2px solid #53a1de;
+  outline: none;
+  border-radius: 30px;
+  background-color: #253341;
+  color: #fffddf;
+}
+
+.username-select {
+  width: 10%;
+}
+
+.username-select,
+.username-select-filter,
+.date-select-filter {
+  margin-right: 10px;
+  background-color: #253341;
+  color: #fffddf;
+  height: 30px;
+  outline: none;
+  border: 2px solid #53a1de;
+}
+
+.message-btn {
+  width: 10%;
+  outline: none;
+  border-radius: 30px;
+  background-color: #1da1f2;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  height: 20px;
+}
+
+.filter-container {
+  text-align: center;
+  width: 900px;
+  padding: 20px 0;
+  background: #15202b;
+  position: fixed;
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.filter-container span {
+  color: #ffffff;
+  margin-right: 10px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.username-filter-select {
+  display: inline;
+  margin-left: 10px;
+}
+
+.message-container {
+  width: 900px;
+  margin: auto;
+  padding-top: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.message-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.message-content-container {
+  margin-left: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.line {
+  display: inline;
+}
+
+.user-name,
+.date {
+  margin-right: 8px;
+}
+
+.time {
+  margin-left: 8px;
 }
